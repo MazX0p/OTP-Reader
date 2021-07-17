@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#d3d3d3"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUsers">
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="vertical">
+        <Button
+            android:text="Clear OTP"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/list_users"
+        android:id="@+id/rv_users"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:hint="Enter UserName"
+            android:id="@+id/et_username"
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Add User"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/add_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
